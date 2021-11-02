@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp"
+                    android:background="@color/white"
+                    android:id="@+id/mainLL"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADI N TECH Technologies\nPVT.LTD"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="#3949AB"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/standard_100"
+                            android:layout_height="70dp"
+                            android:scaleType="centerCrop"
+                            android:padding="@dimen/dimen_20dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/logo"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#3D5AFE"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salary Slip"
+                            android:paddingVertical="@dimen/dimen_15dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="#010623"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Employee Name : "
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="#010623"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aditya Nandardhane"
+                                android:id="@+id/emp_name"
+                                android:textSize="@dimen/font_12"
+                                android:layout_gravity="center"
+                                android:textColor="#6B6B6C"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Designation         : "
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#010623"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Full Stack Developer"
+                                android:id="@+id/emp_designation"
+                                android:textSize="@dimen/font_12"
+                                android:layout_gravity="center"
+                                android:textColor="#6B6B6C"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Month &amp; Year      : "
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="#010623"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="June 2021"
+                                android:textSize="@dimen/font_12"
+                                android:id="@+id/emp_month_and_year"
+                                android:layout_gravity="center"
+                                android:textColor="#6B6B6C"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Employee ID : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:paddingHorizontal="@dimen/dimen_5dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CLUEOO51"
+                                    android:id="@+id/emp_id"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NO of Days- Pay : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Location        : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nagpur"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="            - Working : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Salary Mode : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="IMPS"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="                    -LOP  : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Account No  : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3546451125"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="IFSC Code:  : "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CBIN0265445"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="#6B6B6C"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Earnings "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_gravity="end"
+                                    android:textSize="9sp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Deductions"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basic "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10,000.00"
+                                    android:id="@+id/emp_basic_salary"
+                                    android:layout_gravity="end"
+                                    android:textSize="9sp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Provident Fund  "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="-"
+                                    android:textColor="@color/black"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="FDA "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="6,250.00"
+                                    android:id="@+id/emp_fixed_dearness_allowance"
+                                    android:textColor="@color/black"
+                                    android:textSize="9sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="E.S.I. "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HRA  "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5,000.00"
+                                    android:id="@+id/emp_hra"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TA  "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1,200.00"
+                                    android:id="@+id/emp_transport_allowance"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Profession Tax "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/emp_profession_tax"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Other "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2,500.00"
+                                    android:id="@+id/emp_other_allowance"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TDS/IT "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bonus "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.00"
+                                    android:id="@+id/emp_bonus"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Company Welfare "
+                                    android:layout_gravity="center"
+                                    android:textSize="8sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="300.00"
+                                    android:id="@+id/emp_company_welfare"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="          "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LOP "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="      "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="Total Addition "
+                                    android:textColor="@color/black"
+                                    android:textSize="9sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25,000.00"
+                                    android:id="@+id/total_addition"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Deduction "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="300.00"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:id="@+id/total_deduction"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="          "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NET Salary "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="24,700.00"
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:id="@+id/netsalary"
+                                    android:textStyle="bold"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="          "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:background="@drawable/shape_rectangle"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="      "
+                                    android:layout_gravity="center"
+                                    android:textSize="9sp"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/black"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:id="@+id/emp_word_amount"
+                            android:textColor="@color/black"
+                            android:text="Rupees Twenty Four Thousand Seven Hundred Only"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:id="@+id/emp_no_amount"
+                            android:textColor="@color/black"
+                            android:text="Amount: 24,700.00/-"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/emp_date"
+                            android:text="Date: 02 August 2021"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8dp"
+                            android:layout_margin="@dimen/dimen_20dp"
+                            android:textColor="@color/black"
+                            android:text="Note: This is System generated Pay-Slip Does ot required Seal and Signature."/>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="100dp"
+                            android:background="#071A87"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:id="@+id/one"
+                                android:textColor="@color/black"
+                                android:text="Adi N Tech Technologies Pvt.Ltd." />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:layout_toRightOf="@id/one"
+                                android:id="@+id/two"
+                                android:textColor="@color/black"
+                                android:text="( Previously Known as Aditya Nandardhane Software Pvt. Ltd.)"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/two"
+                                android:id="@+id/cin"
+                                android:gravity="center"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:textColor="@color/black"
+                                android:text="                                              CIN:"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:layout_toRightOf="@id/cin"
+                                android:textColor="#00B0FF"
+                                android:layout_below="@id/two"
+                                android:text=":U74999MH201PTC281886"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:text="Web:"
+                                android:id="@+id/web_label"
+                                android:layout_below="@id/cin"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/web_label"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:id="@+id/link"
+                                android:layout_below="@id/cin"
+                                android:textColor="#3D5AFE"
+                                android:text="@string/web_link"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:id="@+id/mob_no_label"
+                                android:textStyle="bold"
+                                android:layout_below="@id/cin"
+                                android:layout_toRightOf="@id/link"
+                                android:textColor="@color/black"
+                                android:text=" Mob No:"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/dimen_7dp"
+                                android:text="8552931134"
+                                android:layout_below="@id/cin"
+                                android:layout_toRightOf="@id/mob_no_label"
+                                android:id="@+id/mob_no"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
